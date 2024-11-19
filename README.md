@@ -1,50 +1,51 @@
-# Welcome to your Expo app 👋
+# Movie and Show Tracker App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A simple React Native app built with Expo to track movies and shows, manage watch lists, and explore detailed information.
 
-## Get started
+---
 
-1. Install dependencies
+## **Features**
 
+### **Home Screen**
+- **Display Lists**: Shows all movies and shows fetched from the API.  
+- **Search**: Search movies or shows by name.  
+- **Sort Alphabetically**: Sort the displayed list in alphabetical order.  
+- **Filter by Type**: Filter the list to show either movies or shows only.  
+- **Hamburger Menu**: Displays a message when clicked.  
+- **Profile Menu**: Opens a placeholder profile screen when clicked.  
+- **My List Tab**: Navigates to "My List" screen.
+
+### **My List Screen**
+- **Categorized Lists**: Displays a user’s movies/shows under "Watched" and "To Watch" categories.  
+- **Horizontal Scroll**: A scrollable list for quick navigation.  
+
+### **Movie/Show Details Screen**
+- **Detailed View**: Displays the title, type, and description of the selected movie/show.  
+- **Categorization Button**: Adds the movie/show to either "Watched" or "To Watch" category.
+
+### **Bonus Features**
+- **Pull-to-Refresh**: Refresh the Home Screen data.
+
+---
+
+## **API Endpoints**
+- **Add Movie to Watch List**: Add movies to "Watched" or "To Watch".  
+- **Get My List**: Retrieve all movies under "Watched" or "To Watch".  
+- **Get Movie Details**: Fetch detailed information of a specific movie.  
+- **Get Movies List**: Retrieve a complete list of movies.
+
+---
+
+## **How to Run**
+1. Install dependencies:
    ```bash
    npm install
    ```
-
-2. Start the app
-
+2. Start the app:
    ```bash
-    npx expo start
+   expo start
    ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+3. Build APK (if needed):
+   ```bash
+   expo build:android
+   ```
